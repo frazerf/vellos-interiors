@@ -1,0 +1,40 @@
+/* ==========================================================================
+Global Variables
+========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Lora|Josefin+Sans:400,600,700');
+
+/* --- Typography --- */
+
+$font-base: 'Lora', serif;
+$font-heading: 'Lora', serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+/* --- Image Path --- */
+
+$image-path: "../../images/";
+
+/* --- Base Colours Black/White --- */
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* --- Brand Colours --- */
+
+$brand-primary: #25172a;
+$brand-secondary: #4a5a5c;
+
+$bg-primary: #e2e8eb;
+
+/* --- Link Colours --- */
+
+$link-primary: #555555;
+$link-primary-hover: #aaaaaa;
+
+/* --- Rounded corners --- */
+
+$round-corners: 3px;
+
+/* --- Animations --- */
+
+$base-duration: 300ms;
+$link-animation: color $base-duration ease-in-out;

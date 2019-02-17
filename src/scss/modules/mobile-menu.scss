@@ -1,0 +1,18 @@
+.mobile-menu {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    display: none;
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+}

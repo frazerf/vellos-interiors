@@ -1,0 +1,44 @@
+.content-right-image {
+    display: flex;
+    background: $bg-primary;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    @media #{$breakpoint-md-up} {
+        flex-direction: row;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .content {
+        width: 100%;
+        @media #{$breakpoint-md-up} {
+            width: 40%;
+        }
+        h2 {
+            @media #{$breakpoint-md-up} {
+                padding-right: 20%;
+            }
+            &::before {
+                content: "";
+                width: 20px;
+                height: 2px; 
+                background: $brand-secondary;
+                display: block;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        height: 280px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/hero.jpg');
+        margin-top: 40px;
+        @media #{$breakpoint-md-up} {
+            width: 60%;
+            margin-top: 0;
+            height: 65vh;
+        }
+    }
+}

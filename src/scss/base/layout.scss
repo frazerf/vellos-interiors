@@ -1,0 +1,27 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: $font-base;
+    color: $brand-secondary;
+}
+
+.container {
+    padding: 0 20px;
+    @media #{$breakpoint-md-up} {
+        padding: 0 50px;
+    }
+}
+
+.slim-container {
+    padding: 0 20px;
+    @media #{$breakpoint-md-up} {
+        padding: 0 150px;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

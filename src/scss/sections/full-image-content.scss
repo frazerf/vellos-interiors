@@ -1,0 +1,33 @@
+.full-image-content { 
+    background: $bg-primary;
+    .image {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/hero-2.jpg');
+        display: flex;
+        align-items: center;
+        @media #{$breakpoint-md-up} {
+            height: 80vh;
+        }
+        .content {
+            width: 100%;
+            padding: 70px 20px;
+            @media #{$breakpoint-md-up} {
+                width: 25%;
+                margin-left: 10%;
+                padding: 0;
+            }
+            h2 {
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 2px; 
+                    background: white;
+                    display: block;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
