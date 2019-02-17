@@ -1317,7 +1317,7 @@ body {
 
 .hero {
   height: 80vh;
-  background-image: url("/assets/img/hero-4.jpg");
+  background-image: url("/assets/img/hero-4-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1462,7 +1462,7 @@ body {
     height: 280px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/assets/img/hero.jpg");
+    background-image: url("/assets/img/hero-min.jpg");
     margin-top: 40px; }
     @media only screen and (min-width: 769px) {
       .content-right-image .image {
@@ -1476,7 +1476,7 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/assets/img/hero-2.jpg");
+    background-image: url("/assets/img/hero-2-min.jpg");
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
