@@ -14,11 +14,17 @@
             width: 100%;
             padding: 70px 20px;
             @media #{$breakpoint-md-up} {
-                width: 25%;
+                width: 50%;
+                margin-left: 10%;
+                padding: 0;
+            }
+            @media #{$breakpoint-lg-up} {
+                width: 30%;
                 margin-left: 10%;
                 padding: 0;
             }
             h2 {
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
                 &::before {
                     content: "";
                     width: 20px;
