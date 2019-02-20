@@ -27,6 +27,17 @@
   text-transform: uppercase;
   margin: 0 0 7px 0;
   letter-spacing: 1px;
+  &::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: $brand-secondary;
+    display: block;
+    margin-top: 8px;
+    .text-light & {
+      background: white;
+    }
+  }
 }
 
 // .h5 {

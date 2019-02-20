@@ -7,6 +7,7 @@
 @import 'base/typography.scss';
 @import 'base/fonts.scss';
 @import 'base/layout.scss';
+@import 'base/forms.scss';
 
 @import "grid/main.scss";
 
@@ -18,5 +19,7 @@
 
 @import 'sections/content-right-image.scss';
 @import 'sections/full-image-content.scss';
+@import 'sections/half-half.scss';
+@import 'sections/product.scss';
 
 @import 'page/index.scss';

@@ -431,12 +431,21 @@ Global Variables
       font-size: 26px;
       line-height: 40px; } }
 
-.h4, h4 {
+.h4, h4, form label {
   font-size: 12px;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   margin: 0 0 7px 0;
   letter-spacing: 1px; }
+  .h4::after, h4::after, form label::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #4a5a5c;
+    display: block;
+    margin-top: 8px; }
+    .text-light .h4::after, .text-light h4::after, .text-light form label::after, form .text-light label::after {
+      background: white; }
 
 h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   font-weight: normal; }
@@ -465,7 +474,7 @@ h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  font-family: "Lora", serif;
+  font-family: Baskerville, serif;
   color: #4a5a5c; }
 
 .container {
@@ -482,6 +491,37 @@ body {
 
 .overflow-hidden {
   overflow: hidden; }
+
+form {
+  margin-top: 30px; }
+  form label {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 0; }
+    form label::after {
+      display: none; }
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #4a5a5c;
+    outline: none;
+    padding: 10px 0;
+    font-family: Baskerville, serif;
+    letter-spacing: 1px; }
+  form textarea {
+    height: 80px;
+    margin-bottom: 30px; }
+  form button {
+    border: 1px solid #4a5a5c;
+    background: transparent;
+    padding: 7px 20px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #4a5a5c; }
 
 .row {
   margin: 0 auto;
@@ -1358,6 +1398,12 @@ body {
       font-size: 12px;
       margin: 0; }
 
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #c6ccd0;
+  text-align: center; }
+
 .hamburger {
   width: 18px;
   height: 18px;
@@ -1450,20 +1496,20 @@ body {
     @media only screen and (min-width: 769px) {
       .content-right-image .content h2 {
         padding-right: 20%; } }
-    .content-right-image .content h2::before {
-      content: "";
-      width: 20px;
-      height: 2px;
-      background: #4a5a5c;
-      display: block;
-      margin-bottom: 8px; }
+    .content-right-image .content .form {
+      padding-right: 20%; }
   .content-right-image .image {
     width: 100%;
     height: 280px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/assets/img/hero-min.jpg");
     margin-top: 40px; }
+    .content-right-image .image img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      object-position: 50%; }
+    .content-right-image .image iframe {
+      height: 100%;
+      width: 100%; }
     @media only screen and (min-width: 769px) {
       .content-right-image .image {
         width: 60%;
@@ -1499,10 +1545,84 @@ body {
           padding: 0; } }
       .full-image-content .image .content h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-        .full-image-content .image .content h2::before {
-          content: "";
-          width: 20px;
-          height: 2px;
-          background: white;
-          display: block;
-          margin-bottom: 8px; }
+
+.half-half {
+  display: -ms-flexbox;
+  display: flex;
+  background: #e2e8eb;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 769px) {
+    .half-half {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  .half-half .content {
+    width: 100%; }
+    @media only screen and (min-width: 769px) {
+      .half-half .content {
+        width: 50%; } }
+    @media only screen and (min-width: 769px) {
+      .half-half .content h2 {
+        padding-right: 20%; } }
+    @media only screen and (min-width: 769px) {
+      .half-half .content .form {
+        padding-right: 20%; } }
+  .half-half .image {
+    width: 100%;
+    height: 280px;
+    margin-top: 40px; }
+    .half-half .image img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      object-position: 50%; }
+    .half-half .image iframe {
+      height: 100%;
+      width: 100%; }
+    @media only screen and (min-width: 769px) {
+      .half-half .image {
+        width: 50%;
+        margin-top: 0;
+        height: 65vh; } }
+
+.product {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .product .content {
+    text-align: center; }
+    .product .content h4::after {
+      margin: 20px auto 0; }
+  .product-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-top: 80px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media only screen and (min-width: 769px) {
+      .product-container {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .product-item {
+    width: 100%;
+    text-decoration: none; }
+    @media only screen and (min-width: 769px) {
+      .product-item {
+        width: 30%; } }
+    .product-item:hover {
+      text-decoration: underline; }
+    .product-item img {
+      height: 150px;
+      margin: 0 auto 20px;
+      display: block; }
+      @media only screen and (min-width: 769px) {
+        .product-item img {
+          height: 240px; } }
+    .product-item h3, .product-item h5 {
+      text-align: center;
+      color: #4a5a5c; }

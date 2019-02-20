@@ -1,4 +1,4 @@
-.full-image-content { 
+.full-image-content {
     background: $bg-primary;
     .image {
         width: 100%;
@@ -25,14 +25,6 @@
             }
             h2 {
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-                &::before {
-                    content: "";
-                    width: 20px;
-                    height: 2px; 
-                    background: white;
-                    display: block;
-                    margin-bottom: 8px;
-                }
             }
         }
     }

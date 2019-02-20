@@ -1,4 +1,4 @@
-.content-right-image {
+.half-half {
     display: flex;
     background: $bg-primary;
     padding-top: 50px;
@@ -12,7 +12,7 @@
     .content {
         width: 100%;
         @media #{$breakpoint-md-up} {
-            width: 40%;
+            width: 50%;
         }
         h2 {
             @media #{$breakpoint-md-up} {
@@ -20,7 +20,9 @@
             }
         }
         .form {
-          padding-right: 20%;
+          @media #{$breakpoint-md-up} {
+            padding-right: 20%;
+          }
         }
     }
     .image {
@@ -38,7 +40,7 @@
           width: 100%;
         }
         @media #{$breakpoint-md-up} {
-            width: 60%;
+            width: 50%;
             margin-top: 0;
             height: 65vh;
         }
