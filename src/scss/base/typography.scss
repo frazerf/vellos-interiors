@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   font-weight: normal;
   a {
     transition: $link-animation;
-    color: $link-primary;
+    color: $brand-secondary;
     &:hover {
       color: $link-primary-hover;
     }

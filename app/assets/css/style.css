@@ -9,7 +9,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Lora|Josefin+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora|Josefin+Sans:300,400,600,700");
 html {
   line-height: 1.15;
   /* 2 */
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6, p, ul li, ol li {
   font-weight: normal; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, ul li a, ol li a {
     transition: color 300ms ease-in-out;
-    color: #555555; }
+    color: #4a5a5c; }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover, ul li a:hover, ol li a:hover {
       color: #aaaaaa; }
   .text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6, .text-light p, .text-light ul li, .text-light ol li {
@@ -1338,12 +1338,11 @@ form {
         align-items: center;
     margin-top: 20px; }
   .header .logo a {
-    display: block; }
-    .header .logo a svg {
-      height: 35px;
-      width: 35px; }
-      .header .logo a svg path {
-        stroke: #ffffff; }
+    display: block;
+    width: 40px; }
+    .header .logo a img {
+      display: block;
+      width: 100%; }
   .header .shop {
     display: -ms-flexbox;
     display: flex; }
@@ -1357,7 +1356,6 @@ form {
 
 .hero {
   height: 80vh;
-  background-image: url("/assets/img/hero-4-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1383,20 +1381,30 @@ form {
       height: 1px;
       background: rgba(255, 255, 255, 0.6);
       width: 9px;
-      margin: 10px auto 15px; }
+      margin: 5px auto 9px; }
     .hero .slogan h2 {
       font-family: "Josefin Sans", sans-serif;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 20px;
       letter-spacing: -1.3px;
-      margin: 0; }
+      margin: 0;
+      line-height: 20px; }
+      .hero .slogan h2:nth-child(1) {
+        font-weight: 300; }
     .hero .slogan p {
       font-family: "Josefin Sans", sans-serif;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 12px;
       margin: 0; }
+
+.home-carousel {
+  height: 100vh; }
+  .home-carousel .slick-list {
+    height: 100%; }
+    .home-carousel .slick-list .slick-track {
+      height: 100%; }
 
 footer {
   padding-top: 25px;
@@ -1474,6 +1482,77 @@ footer {
     .mobile-menu-content h2 {
       margin-bottom: 20px; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 .content-right-image {
   display: -ms-flexbox;
   display: flex;
@@ -1488,13 +1567,19 @@ footer {
           flex-direction: row;
       padding-top: 100px;
       padding-bottom: 100px; } }
+  .content-right-image.image-left {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    @media only screen and (min-width: 769px) {
+      .content-right-image.image-left h2, .content-right-image.image-left h4 {
+        padding-left: 20%; } }
   .content-right-image .content {
     width: 100%; }
     @media only screen and (min-width: 769px) {
       .content-right-image .content {
         width: 40%; } }
     @media only screen and (min-width: 769px) {
-      .content-right-image .content h2 {
+      .content-right-image .content h2, .content-right-image .content h4 {
         padding-right: 20%; } }
     .content-right-image .content .form {
       padding-right: 20%; }
@@ -1522,7 +1607,6 @@ footer {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/assets/img/hero-2-min.jpg");
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;

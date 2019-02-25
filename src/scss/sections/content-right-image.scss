@@ -9,12 +9,20 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    &.image-left {
+        flex-direction: row-reverse;
+        h2, h4 {
+            @media #{$breakpoint-md-up} {
+                padding-left: 20%;
+            }
+        }
+    }
     .content {
         width: 100%;
         @media #{$breakpoint-md-up} {
             width: 40%;
         }
-        h2 {
+        h2, h4 {
             @media #{$breakpoint-md-up} {
                 padding-right: 20%;
             }
