@@ -28,3 +28,118 @@
         }
     }
 }
+
+
+.services {
+    padding: 100px 100px 0 100px;
+}
+
+.services-2 {
+    padding: 0 100px 100px 100px;
+    margin-top: -380px;
+}
+
+.top-left {
+    position: relative;
+    width: 60%;
+    float: left;
+    &-holder {
+        padding-right: 50px;
+        .bg {
+            background-image: url('./../img/traditional.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+        }
+        .content {
+            margin: -20% 0px 0 30%;
+            background: white;
+            padding: 20px;
+        }
+    }
+}
+
+.top-right {
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-top: 130px;
+    &-holder {
+        padding-left: 50px;
+        .bg {
+            background-image: url('./../img/con.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            width: 100%;
+        }
+        .content {
+            margin: -15% 20% 0 0%;
+            background: white;
+            padding: 20px 20px 0 0;
+        }
+    }
+}
+
+.bottom-left {
+    position: relative;
+    width: 40%;
+    float: left;
+    &-holder {
+        padding-right: 50px;
+        .bg {
+            background-image: url('./../img/int.jpg');
+            background-size: cover;
+            background-position: 37% 50%;
+            height: 700px;
+            width: 100%;
+        }
+        .content {
+            margin: -20% 20% 0 0%;
+            background: white;
+            padding: 20px;
+        }
+    }
+}
+
+.bottom-right {
+    position: relative;
+    width: 60%;
+    float: right;
+    margin-top: 470px;
+    &-holder {
+        padding-left: 50px;
+        .bg {
+            background-image: url('./../img/arch.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+        }
+        .content {
+            margin: -15% 0 0 20%;
+            background: white;
+            padding: 20px 0 0 20px;
+        }
+    }
+}
+
+.about {
+    &-container {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
