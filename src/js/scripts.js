@@ -31,7 +31,7 @@
       fade: true,
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 10000,
+      autoplaySpeed: 5000,
       pauseOnHover: false
     });
   });

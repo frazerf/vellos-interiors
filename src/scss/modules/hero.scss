@@ -7,44 +7,6 @@
     @media #{$breakpoint-md-up} {
         height: 100vh;
     }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .slogan {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        text-align: center;
-        padding-bottom: 30px;
-        &-breaker {
-            height: 1px;
-            background: rgba(255, 255, 255, 0.6);
-            width: 9px;
-            margin: 5px auto 9px;
-        }
-        h2 {
-            font-family: $font-secondary;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 20px;
-            letter-spacing: -1.3px;
-            margin: 0;
-            line-height: 20px;
-            &:nth-child(1) {
-                font-weight: 300;
-            }
-        }
-        p {
-            font-family: $font-secondary;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 12px;
-            margin: 0;
-        }
-    }
 }
 
 .home-carousel {
@@ -55,4 +17,79 @@
             height: 100%;
         }
     }
+}
+
+.hero-holder {
+  height: 100vh;
+  position: relative;
+  .hero-content {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    &--container {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      margin: 0 auto;
+      height: 100%;
+      text-align: center;
+      .divider {
+        background: white;
+        height: 1px;
+        width: 100%;
+        margin: 20px 0;
+      }
+      p {
+        font-style: italic;
+        text-shadow: 0px 0px 5px black;
+      }
+    }
+  }
+}
+
+$mouse-width: 28px;
+
+.mouse {
+	max-width: $mouse-width;
+	width: 100%;
+	height: auto;
+}
+
+.scroll {
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	animation-iteration-count: infinite;
+	transform-origin: 50% 20.5px;
+	will-change: transform, opacity;
+	opacity: 1;
+}
+
+.scroll-link {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@keyframes scroll {
+
+	0%, 20% {
+		transform: translateY(0) scaleY(1);
+	}
+
+	100% {
+		transform: translateY(36px) scaleY(2);
+		opacity: 0;
+	}
+}
+
+.scroller {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 14px);
 }

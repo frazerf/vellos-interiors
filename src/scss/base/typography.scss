@@ -1,80 +1,64 @@
 .h1 {
   font-size: 36px;
-  letter-spacing: -0.6px;
   font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
   @media #{$breakpoint-md-up} {
-    font-size: 60px;
+    font-size: 80px;
   }
 }
 
 .h2 {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 23px;
+  line-height: 34px;
   margin: 0;
-  letter-spacing: -0.3px;
   @media #{$breakpoint-md-up} {
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 32px;
   }
 }
 
 .h3 {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 23px;
+  line-height: 34px;
   margin: 0;
-  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   @media #{$breakpoint-md-up} {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
 
 .h4 {
-  font-size: 12px;
-  font-family: $font-secondary;
-  text-transform: uppercase;
-  margin: 0 0 7px 0;
-  letter-spacing: 1px;
-  color: $brand-tertiary;
-  &::after {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: $brand-tertiary;
-    display: block;
-    margin-top: 8px;
-    .text-light & {
-      background: white;
-    }
+  font-size: 23px;
+  line-height: 34px;
+  margin: 0 0 20px 0;
+  @media #{$breakpoint-md-up} {
+    font-size: 27px;
+    line-height: 32px;
   }
 }
 
 .h5 {
-  font-size: 12px;
-  font-family: $font-secondary;
-  text-transform: uppercase;
-  margin: 0 0 7px 0;
-  letter-spacing: 1px;
-  color: $brand-tertiary;
-  &::after {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: $brand-tertiary;
-    display: block;
-    margin-top: 8px;
-    .text-light & {
-      background: white;
-    }
+  font-size: 23px;
+  line-height: 34px;
+  @media #{$breakpoint-md-up} {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
-// .h6 {
 
-// }
-
-// .p {
-// }
+.p {
+  font-size: 19px;
+  line-height: 34px;
+  margin: 0;
+  @media #{$breakpoint-md-up} {
+    font-size: 19px;
+    line-height: 32px;
+  }
+}
 
 h1 {
   @extend .h1;
@@ -100,9 +84,9 @@ h5 {
 //   @extend .h6;
 // }
 
-// p {
-//   @extend .p;
-// }
+p {
+  @extend .p;
+}
 
 // ul, ol {
 //   li {
