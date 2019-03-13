@@ -118,8 +118,11 @@
 .about {
     &-container {
         text-align: center;
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
+        @media #{$breakpoint-md-up} {
+          width: 60%;
+        }
     }
 }
 

@@ -13,10 +13,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .logo {
+      position: absolute;
+      left: calc(50% - 20px);
+      top: 20px;
         a {
             display: block;
             width: 40px;
@@ -31,7 +34,24 @@
         display: flex;
 
         .phone {
-            margin: 0 10px;
+          display: none;
+          align-content: center;
+          @media #{$breakpoint-md-up} {
+            display: flex;
+          }
+            svg {
+              width: 8px;
+              height: 17px;
+              transform: rotate(180deg);
+              margin-right: 15px;
+              margin-left: 7px;
+            }
+            span {
+              color: white;
+              font-family: monospace;
+              letter-spacing: -1px;
+              font-size: 14px;
+            }
         }
 
         .icon-basket {

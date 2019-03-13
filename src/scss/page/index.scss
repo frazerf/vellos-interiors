@@ -1,12 +1,18 @@
 .service-holder {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  @media #{$breakpoint-md-up} {
+    display: flex;
+    justify-content: space-between;
+  }
   .service-item {
-    width: 50%;
+    width: 100%;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media #{$breakpoint-md-up} {
+      width: 50%;
+    }
     &:hover {
       .overlay {
         opacity: 1;
@@ -16,38 +22,63 @@
       background-image: url('./../img/traditional.jpg');
       background-size: cover;
       background-position: center;
-      margin-right: 20px;
+      @media #{$breakpoint-md-up} {
+        margin-right: 20px;
+      }
     }
     &.contemporary {
       background-image: url('./../img/contemp.jpg');
       background-size: cover;
       background-position: center;
-      margin-left: 20px;
+      margin-top: 20px;
+      @media #{$breakpoint-md-up} {
+        margin-left: 20px;
+        margin-top: 0;
+      }
     }
     &.interiors {
       background-image: url('./../img/int.jpg');
       background-size: cover;
       background-position: center;
-      margin-right: 20px;
+      @media #{$breakpoint-md-up} {
+        margin-right: 20px;
+      }
     }
     &.architectural {
       background-image: url('./../img/arch.jpg');
       background-size: cover;
       background-position: center;
-      margin-left: 20px;
+      margin-top: 20px;
+      @media #{$breakpoint-md-up} {
+        margin-left: 20px;
+        margin-top: 0;
+      }
     }
     .overlay {
       background: rgba(0, 0, 0, .55);
-      width: 90%;
-      height: 82%;
+      width: 80%;
+      height: 80%;
       text-align: center;
       padding: 20px;
       align-items: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      opacity: 0;
+      opacity: 1;
       transition: 300ms all linear;
+      @media #{$breakpoint-md-up} {
+        opacity: 0;
+        width: 90%;
+        height: 82%;
+      }
+      p {
+          font-size: 16px;
+          line-height: 24px;
+          @media #{$breakpoint-md-up} {
+            font-size: 19px;
+            line-height: 32px;
+          }
+      }
       h3 {
         &::after {
           content: "";
@@ -63,14 +94,18 @@
 }
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media #{$breakpoint-md-up} {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   h2 {
     &::after {
       content: "";
       width: 40px;
       height: 3px;
-      background: #62a3b7;
+      background: #29353e;
       display: block;
       margin: 25px auto 15px;
     }
@@ -78,9 +113,15 @@
 }
 
 .services {
-  margin: 40px 0;
+  margin: 20px 0;
+  @media #{$breakpoint-md-up} {
+    margin: 40px 0;
+  }
 }
 
 .services-2 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  @media #{$breakpoint-md-up} {
+    margin-bottom: 100px;
+  }
 }

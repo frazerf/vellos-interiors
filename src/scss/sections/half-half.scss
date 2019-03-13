@@ -4,6 +4,16 @@
     padding-top: 50px;
     padding-bottom: 50px;
     flex-direction: column;
+    h4 {
+      &::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        background: #29353e;
+        display: block;
+        margin: 15px 0;
+      }
+    }
     @media #{$breakpoint-md-up} {
         flex-direction: row;
         padding-top: 100px;

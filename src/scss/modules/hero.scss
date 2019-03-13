@@ -33,10 +33,13 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
-      width: 45%;
+      width: 80%;
       margin: 0 auto;
       height: 100%;
       text-align: center;
+      @media #{$breakpoint-md-up} {
+        width: 650px;
+      }
       .divider {
         background: white;
         height: 1px;
