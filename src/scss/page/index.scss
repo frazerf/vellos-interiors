@@ -18,6 +18,16 @@
         opacity: 1;
       }
     }
+    &:active {
+      .overlay {
+        opacity: 1;
+      }
+    }
+    &:focus {
+      .overlay {
+        opacity: 1;
+      }
+    }
     &.traditional {
       background-image: url('./../img/traditional.jpg');
       background-size: cover;

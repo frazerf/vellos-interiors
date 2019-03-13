@@ -1932,6 +1932,10 @@ footer {
         width: 50%; } }
     .service-holder .service-item:hover .overlay {
       opacity: 1; }
+    .service-holder .service-item:active .overlay {
+      opacity: 1; }
+    .service-holder .service-item:focus .overlay {
+      opacity: 1; }
     .service-holder .service-item.traditional {
       background-image: url("./../img/traditional.jpg");
       background-size: cover;
