@@ -64,10 +64,9 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      opacity: 1;
+      opacity: 0;
       transition: 300ms all linear;
       @media #{$breakpoint-md-up} {
-        opacity: 0;
         width: 90%;
         height: 82%;
       }
