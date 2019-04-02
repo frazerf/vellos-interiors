@@ -14,8 +14,10 @@
       width: 50%;
     }
     &:hover {
+      cursor: pointer;
       .overlay {
         opacity: 1;
+        cursor: pointer;
       }
     }
     &:active {

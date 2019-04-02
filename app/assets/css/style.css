@@ -1930,8 +1930,11 @@ footer {
     @media only screen and (min-width: 769px) {
       .service-holder .service-item {
         width: 50%; } }
-    .service-holder .service-item:hover .overlay {
-      opacity: 1; }
+    .service-holder .service-item:hover {
+      cursor: pointer; }
+      .service-holder .service-item:hover .overlay {
+        opacity: 1;
+        cursor: pointer; }
     .service-holder .service-item:active .overlay {
       opacity: 1; }
     .service-holder .service-item:focus .overlay {
