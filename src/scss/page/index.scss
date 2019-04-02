@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     @media #{$breakpoint-md-up} {
       width: 50%;
     }
