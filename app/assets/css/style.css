@@ -1986,12 +1986,13 @@ footer {
           justify-content: center;
       -ms-flex-direction: column;
           flex-direction: column;
-      opacity: 0;
+      opacity: 1;
       transition: 300ms all linear; }
       @media only screen and (min-width: 769px) {
         .service-holder .service-item .overlay {
           width: 90%;
-          height: 82%; } }
+          height: 82%;
+          opacity: 0; } }
       .service-holder .service-item .overlay p {
         font-size: 16px;
         line-height: 24px; }

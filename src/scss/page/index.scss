@@ -77,11 +77,12 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      opacity: 0;
+      opacity: 1;
       transition: 300ms all linear;
       @media #{$breakpoint-md-up} {
         width: 90%;
         height: 82%;
+        opacity: 0;
       }
       p {
           font-size: 16px;
