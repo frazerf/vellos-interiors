@@ -1567,7 +1567,7 @@ footer {
 
 .mobile-menu {
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(46, 62, 74, 0.9);
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -1586,7 +1586,7 @@ footer {
       margin-bottom: 20px; }
       .mobile-menu-content h4 a {
         text-decoration: none;
-        color: white; }
+        color: #e3cda1; }
 
 /* Slider */
 .slick-slider {
