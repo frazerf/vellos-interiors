@@ -9,7 +9,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Lora|Josefin+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Lora|Mr+Dafoe|Josefin+Sans:300,400,600,700");
 html {
   line-height: 1.15;
   /* 2 */
@@ -1514,6 +1514,12 @@ footer {
     @media only screen and (min-width: 769px) {
       footer h5 {
         margin-top: 0px; } }
+
+.signed {
+  font-family: 'Mr Dafoe', cursive;
+  color: #E3CDA1;
+  font-size: 30px;
+  margin-left: 10px; }
 
 .hamburger {
   width: 18px;
